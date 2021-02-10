@@ -5,18 +5,72 @@ namespace MyFirstRepo
     {
         static void Main(string[] args)
             
-            //ПЕРЕВЕРНУТИЙ ТРИКУТНИК
+                          // ФІГУРКИ В КОНСОЛІ З ДОПОМОГОЮ ЦИКЛІВ
+            
+        //ПРОСТИЙ ТРИКУТНИК
         {
-            Console.WriteLine("Enter the height your triangle:");
-            int height = int.Parse(Console.ReadLine());
-            for (int i = 0; i < height; i++)
-            {
-                for (int j = height; j > i; j--)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }
+           Console.WriteLine("Enter height for your triangle:");
+           int height = int.Parse(Console.ReadLine());
+           for (int i = 0; i < height; i++)
+           {
+               for (int j = 0; j <= i; j++)
+               {
+                   Console.Write("*");
+               }
+               Console.WriteLine();
+           }
+           Console.ReadLine();
+        }
+        //ПЕРЕВЕРНУТИЙ ТРИКУТНИК
+        {
+           Console.Write("Enter height for your triengle:");
+           int height = int.Parse(Console.ReadLine());
+           for (int i = 0; i < height; i++)
+           {
+               for (int j = height; j > i; j--)
+               {
+                   Console.Write("*");
+               }
+               Console.WriteLine();
+           }
+           Console.ReadLine();
+        }
+        //ЗЕРКАЛЬНИЙ ТРИКУТНИК
+        {
+           Console.WriteLine("Enter height for your triangle:");
+           int height = int.Parse(Console.ReadLine());
+           for (int i = 0; i < height; i++)
+           {
+               for (int j = height; j > i; j--)
+               {
+                   Console.Write(" ");
+               }
+               for (int j = 0; j <= i; j++)
+               {
+                   Console.Write("*");
+               }
+               Console.WriteLine();
+           }
+           Console.ReadLine();
+        }
+        //ЗЕРКАЛЬНИЙ ТРИКУТНИК 2
+        {
+           Console.Write("Enter height for your triengle:");
+           int height = int.Parse(Console.ReadLine());
+           for (int i = 0; i < height; i++)
+           {
+               for(int j = 0; j <= i; j++)
+               {
+               Console.Write(" ");
+           }
+           for (int j = height; j > i; j--)
+               {
+                   Console.Write("*");
+               }
+               Console.WriteLine();
+           }
+           Console.ReadLine();
+        }
         }      
         //МАКСИМАЛЬНЕ ЗНАЧЕННЯ
         {
@@ -64,22 +118,7 @@ namespace MyFirstRepo
                }
                y++;
                Console.WriteLine();
-            }
-        
-        //ТРИКУТНИК   
-            int y = 0;
-            int x = 7;
-            while (y < x)
-            {
-                int z = 0;
-                while (z < y)
-                {
-                    Console.Write("*");
-                    z += 1;
-                }
-                y++;
-                Console.WriteLine("#");
-            }
+            }       
         //ПРЯМОКУТНИК
             int y = 0;
             int a = 3;
@@ -95,19 +134,7 @@ namespace MyFirstRepo
                 Console.WriteLine();
             }
         
-        //ПИФАГОР
-            {
-                for (int i = 1; i <= 7; i++)
-                {
-                    for (int j = 1; j <= 7; j++)
-                    {
-                        int k = i * j;
-                        Console.Write("  " + k);
-                    }
-                    Console.WriteLine(" ");
-                }
-                Console.ReadLine();
-            }
+        
         
     }
 }  
