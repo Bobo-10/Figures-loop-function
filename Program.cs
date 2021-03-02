@@ -72,25 +72,6 @@ namespace MyFirstRepo
            Console.ReadLine();
         }
         }      
-        //МАКСИМАЛЬНЕ ЗНАЧЕННЯ
-        {
-            int a = 5;
-            int b = 6;
-            int c = 8;
-            int d = 15;
-            int max = a;
-            if (max<b)
-            {
-                max = b;              
-                if (max < c)
-                    max = c;
-             }
-            if (max < d)
-                max = d;
-                    {
-                Console.WriteLine(max);
-                    }
-             }
         //ЯЛИНКА КРАСИВА
             Console.ReadLine();
 
