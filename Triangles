@@ -1,0 +1,65 @@
+//ПРОСТИЙ ТРИКУТНИК
+        {
+           Console.WriteLine("Enter height for your triangle:");
+           int height = int.Parse(Console.ReadLine());
+           for (int i = 0; i < height; i++)
+           {
+               for (int j = 0; j <= i; j++)
+               {
+                   Console.Write("*");
+               }
+               Console.WriteLine();
+           }
+           Console.ReadLine();
+        }
+        //ПЕРЕВЕРНУТИЙ ТРИКУТНИК
+        {
+           Console.Write("Enter height for your triengle:");
+           int height = int.Parse(Console.ReadLine());
+           for (int i = 0; i < height; i++)
+           {
+               for (int j = height; j > i; j--)
+               {
+                   Console.Write("*");
+               }
+               Console.WriteLine();
+           }
+           Console.ReadLine();
+        }
+        //ЗЕРКАЛЬНИЙ ТРИКУТНИК
+        {
+           Console.WriteLine("Enter height for your triangle:");
+           int height = int.Parse(Console.ReadLine());
+           for (int i = 0; i < height; i++)
+           {
+               for (int j = height; j > i; j--)
+               {
+                   Console.Write(" ");
+               }
+               for (int j = 0; j <= i; j++)
+               {
+                   Console.Write("*");
+               }
+               Console.WriteLine();
+           }
+           Console.ReadLine();
+        }
+        //ЗЕРКАЛЬНИЙ ТРИКУТНИК 2
+        {
+           Console.Write("Enter height for your triengle:");
+           int height = int.Parse(Console.ReadLine());
+           for (int i = 0; i < height; i++)
+           {
+               for(int j = 0; j <= i; j++)
+               {
+               Console.Write(" ");
+           }
+           for (int j = height; j > i; j--)
+               {
+                   Console.Write("*");
+               }
+               Console.WriteLine();
+           }
+           Console.ReadLine();
+        }
+        }      
